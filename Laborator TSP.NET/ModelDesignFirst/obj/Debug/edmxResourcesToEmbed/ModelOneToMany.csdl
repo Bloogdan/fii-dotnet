@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ModelOneToMany" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="ModelOneToManyContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Customers" EntityType="ModelOneToMany.Customer" />
+    <EntitySet Name="Orders" EntityType="ModelOneToMany.Order" />
+    <AssociationSet Name="CustomerOrder" Association="ModelOneToMany.CustomerOrder">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="CustomerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="20" />
+    <NavigationProperty Name="Orders" Relationship="ModelOneToMany.CustomerOrder" FromRole="Customer" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TotalValue" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="Date" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Customer" Relationship="ModelOneToMany.CustomerOrder" FromRole="Order" ToRole="Customer" />
+    <Property Name="CustomerCustomerId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="CustomerOrder">
+    <End Type="ModelOneToMany.Customer" Role="Customer" Multiplicity="1" />
+    <End Type="ModelOneToMany.Order" Role="Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="CustomerCustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

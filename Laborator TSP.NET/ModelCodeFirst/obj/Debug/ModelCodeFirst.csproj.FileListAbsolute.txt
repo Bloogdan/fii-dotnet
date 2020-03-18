@@ -1,0 +1,11 @@
+C:\Users\Bogdan\source\repos\Laborator TSP.NET\ModelCodeFirst\bin\Debug\ModelCodeFirst.exe.config
+C:\Users\Bogdan\source\repos\Laborator TSP.NET\ModelCodeFirst\bin\Debug\ModelCodeFirst.exe
+C:\Users\Bogdan\source\repos\Laborator TSP.NET\ModelCodeFirst\bin\Debug\ModelCodeFirst.pdb
+C:\Users\Bogdan\source\repos\Laborator TSP.NET\ModelCodeFirst\bin\Debug\EntityFramework.dll
+C:\Users\Bogdan\source\repos\Laborator TSP.NET\ModelCodeFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bogdan\source\repos\Laborator TSP.NET\ModelCodeFirst\bin\Debug\EntityFramework.xml
+C:\Users\Bogdan\source\repos\Laborator TSP.NET\ModelCodeFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bogdan\source\repos\Laborator TSP.NET\ModelCodeFirst\obj\Debug\ModelCodeFirst.csprojAssemblyReference.cache
+C:\Users\Bogdan\source\repos\Laborator TSP.NET\ModelCodeFirst\obj\Debug\ModelCodeFirst.csproj.CopyComplete
+C:\Users\Bogdan\source\repos\Laborator TSP.NET\ModelCodeFirst\obj\Debug\ModelCodeFirst.exe
+C:\Users\Bogdan\source\repos\Laborator TSP.NET\ModelCodeFirst\obj\Debug\ModelCodeFirst.pdb
