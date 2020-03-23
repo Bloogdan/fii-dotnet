@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ModelManyToMany.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ModelManyToManyStoreContainer">
+    <EntitySet Name="Albums" EntityType="ModelManyToMany.Store.Albums" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Artists" EntityType="ModelManyToMany.Store.Artists" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AlbumArtist" EntityType="ModelManyToMany.Store.AlbumArtist" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_AlbumArtist_Album" Association="ModelManyToMany.Store.FK_AlbumArtist_Album">
+      <End Role="Album" EntitySet="Albums" />
+      <End Role="AlbumArtist" EntitySet="AlbumArtist" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AlbumArtist_Artist" Association="ModelManyToMany.Store.FK_AlbumArtist_Artist">
+      <End Role="Artist" EntitySet="Artists" />
+      <End Role="AlbumArtist" EntitySet="AlbumArtist" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Albums">
+    <Key>
+      <PropertyRef Name="AlbumId" />
+    </Key>
+    <Property Name="AlbumId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AlbumName" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Artists">
+    <Key>
+      <PropertyRef Name="ArtistId" />
+    </Key>
+    <Property Name="ArtistId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="AlbumArtist">
+    <Key>
+      <PropertyRef Name="Albums_AlbumId" />
+      <PropertyRef Name="Artists_ArtistId" />
+    </Key>
+    <Property Name="Albums_AlbumId" Type="int" Nullable="false" />
+    <Property Name="Artists_ArtistId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AlbumArtist_Album">
+    <End Role="Album" Type="ModelManyToMany.Store.Albums" Multiplicity="1" />
+    <End Role="AlbumArtist" Type="ModelManyToMany.Store.AlbumArtist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Album">
+        <PropertyRef Name="AlbumId" />
+      </Principal>
+      <Dependent Role="AlbumArtist">
+        <PropertyRef Name="Albums_AlbumId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AlbumArtist_Artist">
+    <End Role="AlbumArtist" Type="ModelManyToMany.Store.AlbumArtist" Multiplicity="*" />
+    <End Role="Artist" Type="ModelManyToMany.Store.Artists" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Artist">
+        <PropertyRef Name="ArtistId" />
+      </Principal>
+      <Dependent Role="AlbumArtist">
+        <PropertyRef Name="Artists_ArtistId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,6 @@
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\Laborator1\bin\Debug\Laborator1.exe.config
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\Laborator1\bin\Debug\Laborator1.exe
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\Laborator1\bin\Debug\Laborator1.pdb
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\Laborator1\obj\Debug\Laborator1.exe
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\Laborator1\obj\Debug\Laborator1.pdb
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\Laborator1\obj\Debug\Laborator1.csprojAssemblyReference.cache

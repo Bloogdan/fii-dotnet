@@ -9,3 +9,14 @@ C:\Users\Bogdan\source\repos\Laborator TSP.NET\ModelDesignFirst\obj\Debug\ModelD
 C:\Users\Bogdan\source\repos\Laborator TSP.NET\ModelDesignFirst\obj\Debug\ModelDesignFirst.csproj.CopyComplete
 C:\Users\Bogdan\source\repos\Laborator TSP.NET\ModelDesignFirst\obj\Debug\ModelDesignFirst.exe
 C:\Users\Bogdan\source\repos\Laborator TSP.NET\ModelDesignFirst\obj\Debug\ModelDesignFirst.pdb
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\ModelDesignFirst\bin\Debug\ModelDesignFirst.exe.config
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\ModelDesignFirst\bin\Debug\ModelDesignFirst.exe
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\ModelDesignFirst\bin\Debug\ModelDesignFirst.pdb
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\ModelDesignFirst\bin\Debug\EntityFramework.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\ModelDesignFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\ModelDesignFirst\bin\Debug\EntityFramework.xml
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\ModelDesignFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\ModelDesignFirst\obj\Debug\ModelDesignFirst.csprojAssemblyReference.cache
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\ModelDesignFirst\obj\Debug\ModelDesignFirst.csproj.CopyComplete
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\ModelDesignFirst\obj\Debug\ModelDesignFirst.exe
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\ModelDesignFirst\obj\Debug\ModelDesignFirst.pdb

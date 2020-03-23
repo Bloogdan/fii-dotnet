@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ModelManyToMany" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="ModelManyToManyContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Albums" EntityType="ModelManyToMany.Album" />
+    <EntitySet Name="Artists" EntityType="ModelManyToMany.Artist" />
+    <AssociationSet Name="AlbumArtist" Association="ModelManyToMany.AlbumArtist">
+      <End Role="Album" EntitySet="Albums" />
+      <End Role="Artist" EntitySet="Artists" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Album">
+    <Key>
+      <PropertyRef Name="AlbumId" />
+    </Key>
+    <Property Name="AlbumId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AlbumName" Type="String" Nullable="false" MaxLength="50" />
+    <NavigationProperty Name="Artists" Relationship="ModelManyToMany.AlbumArtist" FromRole="Album" ToRole="Artist" />
+  </EntityType>
+  <EntityType Name="Artist">
+    <Key>
+      <PropertyRef Name="ArtistId" />
+    </Key>
+    <Property Name="ArtistId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="10" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="10" />
+    <NavigationProperty Name="Albums" Relationship="ModelManyToMany.AlbumArtist" FromRole="Artist" ToRole="Album" />
+  </EntityType>
+  <Association Name="AlbumArtist">
+    <End Type="ModelManyToMany.Album" Role="Album" Multiplicity="*" />
+    <End Type="ModelManyToMany.Artist" Role="Artist" Multiplicity="*" />
+  </Association>
+</Schema>
