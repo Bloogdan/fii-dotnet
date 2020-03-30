@@ -12,3 +12,5 @@ C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\bin\Debug\E
 C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\obj\Debug\HostWCF.csproj.CopyComplete
 C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\obj\Debug\HostWCF.exe
 C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\obj\Debug\HostWCF.pdb
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\bin\Debug\EntityFramework.SqlServer.xml

@@ -37,16 +37,15 @@
             // dgp
             // 
             this.dgp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgp.Location = new System.Drawing.Point(12, 12);
+            this.dgp.Location = new System.Drawing.Point(49, 35);
             this.dgp.Name = "dgp";
             this.dgp.Size = new System.Drawing.Size(240, 150);
             this.dgp.TabIndex = 0;
-            this.dgp.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgp_CellMouseClick);
             // 
             // dgc
             // 
             this.dgc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgc.Location = new System.Drawing.Point(548, 12);
+            this.dgc.Location = new System.Drawing.Point(482, 287);
             this.dgc.Name = "dgc";
             this.dgc.Size = new System.Drawing.Size(240, 150);
             this.dgc.TabIndex = 1;
@@ -60,7 +59,6 @@
             this.Controls.Add(this.dgp);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgc)).EndInit();
             this.ResumeLayout(false);

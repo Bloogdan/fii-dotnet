@@ -9,6 +9,3 @@ C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\ClientPostComment\o
 C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\ClientPostComment\obj\Debug\ClientPostComment.csproj.CopyComplete
 C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\ClientPostComment\obj\Debug\ClientPostComment.exe
 C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\ClientPostComment\obj\Debug\ClientPostComment.pdb
-C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\ClientPostComment\bin\Debug\System.Data.SqlClient.dll
-C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\ClientPostComment\bin\Debug\System.Data.SqlClient.xml
-C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\ClientPostComment\obj\Debug\ClientPostComment.csprojAssemblyReference.cache
