@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="ModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Photos" EntityType="Model.Photo" />
+    <EntitySet Name="Tags" EntityType="Model.Tag" />
+    <AssociationSet Name="PhotoTag" Association="Model.PhotoTag">
+      <End Role="Photo" EntitySet="Photos" />
+      <End Role="Tag" EntitySet="Tags" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Photo">
+    <Key>
+      <PropertyRef Name="PhotoId" />
+    </Key>
+    <Property Name="PhotoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Path" Type="String" Nullable="false" MaxLength="100" />
+    <Property Name="CreatedAt" Type="DateTime" Nullable="false" />
+    <Property Name="Deleted" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Tags" Relationship="Model.PhotoTag" FromRole="Photo" ToRole="Tag" />
+  </EntityType>
+  <EntityType Name="Tag">
+    <Key>
+      <PropertyRef Name="TagId" />
+    </Key>
+    <Property Name="TagId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="String" Nullable="false" MaxLength="20" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="20" />
+    <NavigationProperty Name="Photos" Relationship="Model.PhotoTag" FromRole="Tag" ToRole="Photo" />
+  </EntityType>
+  <Association Name="PhotoTag">
+    <End Type="Model.Photo" Role="Photo" Multiplicity="*" />
+    <End Type="Model.Tag" Role="Tag" Multiplicity="*" />
+  </Association>
+</Schema>

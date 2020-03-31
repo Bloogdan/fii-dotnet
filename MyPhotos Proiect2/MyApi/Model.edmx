@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="Photos" EntityType="Model.Store.Photos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tags" EntityType="Model.Store.Tags" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PhotoTag" EntityType="Model.Store.PhotoTag" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_PhotoTag_Photo" Association="Model.Store.FK_PhotoTag_Photo">
+      <End Role="Photo" EntitySet="Photos" />
+      <End Role="PhotoTag" EntitySet="PhotoTag" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhotoTag_Tag" Association="Model.Store.FK_PhotoTag_Tag">
+      <End Role="Tag" EntitySet="Tags" />
+      <End Role="PhotoTag" EntitySet="PhotoTag" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Photos">
+    <Key>
+      <PropertyRef Name="PhotoId" />
+    </Key>
+    <Property Name="PhotoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Path" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="CreatedAt" Type="datetime" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tags">
+    <Key>
+      <PropertyRef Name="TagId" />
+    </Key>
+    <Property Name="TagId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Type" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="PhotoTag">
+    <Key>
+      <PropertyRef Name="Photos_PhotoId" />
+      <PropertyRef Name="Tags_TagId" />
+    </Key>
+    <Property Name="Photos_PhotoId" Type="int" Nullable="false" />
+    <Property Name="Tags_TagId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_PhotoTag_Photo">
+    <End Role="Photo" Type="Model.Store.Photos" Multiplicity="1" />
+    <End Role="PhotoTag" Type="Model.Store.PhotoTag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Photo">
+        <PropertyRef Name="PhotoId" />
+      </Principal>
+      <Dependent Role="PhotoTag">
+        <PropertyRef Name="Photos_PhotoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhotoTag_Tag">
+    <End Role="PhotoTag" Type="Model.Store.PhotoTag" Multiplicity="*" />
+    <End Role="Tag" Type="Model.Store.Tags" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Tag">
+        <PropertyRef Name="TagId" />
+      </Principal>
+      <Dependent Role="PhotoTag">
+        <PropertyRef Name="Tags_TagId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="ModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Photos" EntityType="Model.Photo" />
+          <EntitySet Name="Tags" EntityType="Model.Tag" />
+          <AssociationSet Name="PhotoTag" Association="Model.PhotoTag">
+            <End Role="Photo" EntitySet="Photos" />
+            <End Role="Tag" EntitySet="Tags" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Photo">
+          <Key>
+            <PropertyRef Name="PhotoId" />
+          </Key>
+          <Property Name="PhotoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Path" Type="String" Nullable="false" MaxLength="100" />
+          <Property Name="CreatedAt" Type="DateTime" Nullable="false" />
+          <Property Name="Deleted" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Tags" Relationship="Model.PhotoTag" FromRole="Photo" ToRole="Tag" />
+        </EntityType>
+        <EntityType Name="Tag">
+          <Key>
+            <PropertyRef Name="TagId" />
+          </Key>
+          <Property Name="TagId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Type" Type="String" Nullable="false" MaxLength="20" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="20" />
+          <NavigationProperty Name="Photos" Relationship="Model.PhotoTag" FromRole="Tag" ToRole="Photo" />
+        </EntityType>
+        <Association Name="PhotoTag">
+          <End Type="Model.Photo" Role="Photo" Multiplicity="*" />
+          <End Type="Model.Tag" Role="Tag" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="ModelContainer">
+    <EntitySetMapping Name="Photos">
+      <EntityTypeMapping TypeName="IsTypeOf(Model.Photo)">
+        <MappingFragment StoreEntitySet="Photos">
+          <ScalarProperty Name="PhotoId" ColumnName="PhotoId" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tags">
+      <EntityTypeMapping TypeName="IsTypeOf(Model.Tag)">
+        <MappingFragment StoreEntitySet="Tags">
+          <ScalarProperty Name="TagId" ColumnName="TagId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="PhotoTag" TypeName="Model.PhotoTag" StoreEntitySet="PhotoTag">
+      <EndProperty Name="Photo">
+        <ScalarProperty Name="PhotoId" ColumnName="Photos_PhotoId" />
+      </EndProperty>
+      <EndProperty Name="Tag">
+        <ScalarProperty Name="TagId" ColumnName="Tags_TagId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

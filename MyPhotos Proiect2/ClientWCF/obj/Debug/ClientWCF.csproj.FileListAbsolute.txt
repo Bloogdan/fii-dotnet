@@ -1,0 +1,11 @@
+C:\Users\Bogdan\source\repos\MyPhotos Proiect2\ClientWCF\bin\Debug\ClientWCF.exe.config
+C:\Users\Bogdan\source\repos\MyPhotos Proiect2\ClientWCF\bin\Debug\ClientWCF.exe
+C:\Users\Bogdan\source\repos\MyPhotos Proiect2\ClientWCF\bin\Debug\ClientWCF.pdb
+C:\Users\Bogdan\source\repos\MyPhotos Proiect2\ClientWCF\bin\Debug\System.ServiceModel.Primitives.dll
+C:\Users\Bogdan\source\repos\MyPhotos Proiect2\ClientWCF\bin\Debug\System.ServiceModel.Primitives.pdb
+C:\Users\Bogdan\source\repos\MyPhotos Proiect2\ClientWCF\obj\Debug\ClientWCF.csprojAssemblyReference.cache
+C:\Users\Bogdan\source\repos\MyPhotos Proiect2\ClientWCF\obj\Debug\ClientWCF.Properties.Resources.resources
+C:\Users\Bogdan\source\repos\MyPhotos Proiect2\ClientWCF\obj\Debug\ClientWCF.csproj.GenerateResource.cache
+C:\Users\Bogdan\source\repos\MyPhotos Proiect2\ClientWCF\obj\Debug\ClientWCF.csproj.CopyComplete
+C:\Users\Bogdan\source\repos\MyPhotos Proiect2\ClientWCF\obj\Debug\ClientWCF.exe
+C:\Users\Bogdan\source\repos\MyPhotos Proiect2\ClientWCF\obj\Debug\ClientWCF.pdb
