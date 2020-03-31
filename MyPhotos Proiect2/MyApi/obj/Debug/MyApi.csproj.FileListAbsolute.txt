@@ -9,3 +9,14 @@ C:\Users\Bogdan\source\repos\MyPhotos Proiect2\MyApi\obj\Debug\MyApi.csprojAssem
 C:\Users\Bogdan\source\repos\MyPhotos Proiect2\MyApi\obj\Debug\MyApi.csproj.CopyComplete
 C:\Users\Bogdan\source\repos\MyPhotos Proiect2\MyApi\obj\Debug\MyApi.dll
 C:\Users\Bogdan\source\repos\MyPhotos Proiect2\MyApi\obj\Debug\MyApi.pdb
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos Proiect2\MyApi\bin\Debug\MyApi.dll.config
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos Proiect2\MyApi\bin\Debug\MyApi.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos Proiect2\MyApi\bin\Debug\MyApi.pdb
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos Proiect2\MyApi\bin\Debug\EntityFramework.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos Proiect2\MyApi\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos Proiect2\MyApi\bin\Debug\EntityFramework.xml
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos Proiect2\MyApi\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos Proiect2\MyApi\obj\Debug\MyApi.csprojAssemblyReference.cache
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos Proiect2\MyApi\obj\Debug\MyApi.csproj.CopyComplete
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos Proiect2\MyApi\obj\Debug\MyApi.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos Proiect2\MyApi\obj\Debug\MyApi.pdb

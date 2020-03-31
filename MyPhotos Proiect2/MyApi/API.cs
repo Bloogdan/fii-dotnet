@@ -40,11 +40,7 @@ namespace MyApi
         public static int DeletePhoto(Photo photo)
         {
             ModelContainer context = new ModelContainer();
-            /*
-                Photo p = context.Photos.Find(photo.PhotoId);
-                p.Deleted = true;
-            */
-            photo.Deleted = true;
+            context.Photos.Where(p => p.PhotoId == photo.PhotoId).FirstOrDefault().Deleted = true;
             return context.SaveChanges();
         }
 
@@ -66,7 +62,8 @@ namespace MyApi
         public static List<Tag> GetTagsOfPhoto(Photo photo)
         {
             ModelContainer context = new ModelContainer();
-            return photo.Tags.ToList();
+            Photo fromDB = context.Photos.Where(p => p.PhotoId == photo.PhotoId).FirstOrDefault();
+            return fromDB.Tags.ToList();
         }
 
         //done
@@ -96,7 +93,7 @@ namespace MyApi
         public static int AddTagToPhoto(Photo photo, Tag tag)
         {
             ModelContainer context = new ModelContainer();
-            photo.Tags.Add(tag);
+            context.Photos.Where(p => p.PhotoId == photo.PhotoId).FirstOrDefault().Tags.Add(tag);
             return context.SaveChanges();
         }
 
@@ -104,7 +101,7 @@ namespace MyApi
         public static void DeleteTagFromPhoto(Photo photo, Tag tag)
         {
             ModelContainer context = new ModelContainer();
-            photo.Tags.Remove(tag);
+            context.Photos.Where(p => p.PhotoId == photo.PhotoId).FirstOrDefault().Tags.Remove(tag);
             context.SaveChanges();
 
             List<Tag> tags = new List<Tag>();
