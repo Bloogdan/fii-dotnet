@@ -1,0 +1,5 @@
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos\MyServiceBehaviors\bin\Debug\MyServiceBehaviors.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos\MyServiceBehaviors\bin\Debug\MyServiceBehaviors.pdb
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos\MyServiceBehaviors\obj\Debug\MyServiceBehaviors.csprojAssemblyReference.cache
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos\MyServiceBehaviors\obj\Debug\MyServiceBehaviors.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos\MyServiceBehaviors\obj\Debug\MyServiceBehaviors.pdb

@@ -1,0 +1,11 @@
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos\ModelWCF\bin\Debug\ModelWCF.dll.config
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos\ModelWCF\bin\Debug\ModelWCF.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos\ModelWCF\bin\Debug\ModelWCF.pdb
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos\ModelWCF\bin\Debug\EntityFramework.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos\ModelWCF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos\ModelWCF\bin\Debug\EntityFramework.xml
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos\ModelWCF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos\ModelWCF\obj\Debug\ModelWCF.csprojAssemblyReference.cache
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos\ModelWCF\obj\Debug\ModelWCF.csproj.CopyComplete
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos\ModelWCF\obj\Debug\ModelWCF.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\MyPhotos\ModelWCF\obj\Debug\ModelWCF.pdb
