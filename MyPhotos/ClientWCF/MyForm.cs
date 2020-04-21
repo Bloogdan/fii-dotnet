@@ -227,7 +227,7 @@ namespace ClientWCF
             }
             listFilters.EndUpdate();
         }
-
+    
         private void buttonRemoveFilter_Click(object sender, EventArgs e)
         {
             char[] delimiterChars = { ' ', ':' };

@@ -1,0 +1,2 @@
+Deoarece primeam o eroare cum ca comunicarea intre server si client se facea prin Array-uri (carora nu li se putea modifica dimenisiunea), a trebuit sa explicitez ca comunicarea sa se faca prin liste prin intermediul celor doua clase din MyServiceBehaviors.
+Solutia am gasti-o aici: https://social.msdn.microsoft.com/Forums/sqlserver/en-US/175282d6-c0e0-4d49-9417-efeeb83e0ae1/how-to-force-wcf-service-with-ilist-parameter-to-deserialize-it-as-list-on-server-side-instead?forum=wcf

@@ -1,0 +1,1 @@
+Mi-ati atras atentia ca unele functii din controller nu foloseau contextul asa ca am modificat codul corespunzator.

@@ -1,0 +1,2 @@
+Deoarece am avut probleme cu transmiterea datelor prin array-uri, am transformat container-ele in IList si List.
+Totodata am adnotat clasele pentru declararea contractului de date in WCF.
