@@ -1,0 +1,3 @@
+obj\Debug\netcoreapp3.0/Postcomment.cs \
+obj\Debug\netcoreapp3.0/PostcommentGrpc.cs: C:/Users/Bogdan/.nuget/packages/grpc.tools/2.23.0/build/native/include/google/protobuf/timestamp.proto\
+ Protos/postcomment.proto

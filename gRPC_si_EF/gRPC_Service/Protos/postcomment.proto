@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+option csharp_namespace = "gRPC_Service";
+
+package PostCommentServer;
+
+service PostComment {
+	rpc AddPost (PostItem) returns (BooleanResponse);
+	rpc UpdatePost (PostItem) returns (PostItem);
+	rpc DeletePost (IdItem) returns (IntegerResponse);
+	rpc GetPostById (IdItem) returns (PostItem);
+	rpc GetAllPosts (EmptyRequest) returns (AllPostItems);
+
+	rpc AddComment (CommentItem) returns (BooleanResponse);
+	rpc UpdateComment (CommentItem) returns (CommentItem);
+	rpc GetCommentById (IdItem) returns (CommentItem);
+}
+
+message PostItem {
+	int32 PostId = 1;
+	string Description = 2;
+	string Domain = 3;
+	google.protobuf.Timestamp Date = 4;
+	repeated CommentItem Comments = 5;
+}
+
+message AllPostItems {
+	repeated PostItem PostItems = 1;
+}
+
+message CommentItem {
+	int32 CommentId = 1;
+	string Text = 2;
+	int32 PostPostId = 3;
+	PostItem Post = 4;
+}
+
+message EmptyRequest {
+
+}
+
+message BooleanResponse {
+	bool Response = 1;
+}
+
+message IntegerResponse {
+	int32 Response = 1;
+}
+
+message IdItem {
+	int32 Id = 1;
+}
