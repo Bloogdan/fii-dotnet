@@ -1,0 +1,32 @@
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\obj\Debug\HostWCF.csprojAssemblyReference.cache
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\bin\Debug\HostWCF.exe.config
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\bin\Debug\HostWCF.exe
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\bin\Debug\HostWCF.pdb
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\bin\Debug\ObjectWCF.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\bin\Debug\PostComment.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\bin\Debug\EntityFramework.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\bin\Debug\ObjectWCF.pdb
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\bin\Debug\PostComment.pdb
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\bin\Debug\PostComment.dll.config
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\bin\Debug\EntityFramework.xml
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\obj\Debug\HostWCF.csproj.CopyComplete
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\obj\Debug\HostWCF.exe
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\obj\Debug\HostWCF.pdb
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\Laborator TSP.NET\HostWCF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\WCF EF ASP.NET\HostWCF\bin\Debug\HostWCF.exe.config
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\WCF EF ASP.NET\HostWCF\bin\Debug\HostWCF.exe
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\WCF EF ASP.NET\HostWCF\bin\Debug\HostWCF.pdb
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\WCF EF ASP.NET\HostWCF\bin\Debug\EntityFramework.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\WCF EF ASP.NET\HostWCF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\WCF EF ASP.NET\HostWCF\bin\Debug\ObjectWCF.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\WCF EF ASP.NET\HostWCF\bin\Debug\PostComment.dll
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\WCF EF ASP.NET\HostWCF\bin\Debug\ObjectWCF.pdb
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\WCF EF ASP.NET\HostWCF\bin\Debug\EntityFramework.xml
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\WCF EF ASP.NET\HostWCF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\WCF EF ASP.NET\HostWCF\bin\Debug\PostComment.pdb
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\WCF EF ASP.NET\HostWCF\bin\Debug\PostComment.dll.config
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\WCF EF ASP.NET\HostWCF\obj\Debug\HostWCF.csprojAssemblyReference.cache
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\WCF EF ASP.NET\HostWCF\obj\Debug\HostWCF.csproj.CopyComplete
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\WCF EF ASP.NET\HostWCF\obj\Debug\HostWCF.exe
+C:\Users\Bogdan\Documents\GitHub\fiidotnet\WCF EF ASP.NET\HostWCF\obj\Debug\HostWCF.pdb
