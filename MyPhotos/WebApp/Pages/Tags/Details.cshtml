@@ -1,0 +1,38 @@
+﻿@page
+@model WebApp.TagsDetailsModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h3>Details for: @ViewData["Tag"]</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Photos[0].PhotoId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Photos[0].Path)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Photos[0].CreatedAt)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Photos)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PhotoId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Path)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedAt)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

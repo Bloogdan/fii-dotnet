@@ -1,0 +1,49 @@
+﻿@page
+@model WebApp.PhotosIndexModel
+@{
+    ViewData["Title"] = "Photos";
+}
+
+<h1>Photos</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Photos[0].PhotoId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Photos[0].Path)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Photos[0].Tags)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Photos[0].CreatedAt)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Photos)
+        {
+            <tr style="font-size:small">
+                <td>
+                    @Html.DisplayFor(modelItem => item.PhotoId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Path)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tags.Count)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedAt)
+                </td>
+                <td>
+                    <a asp-page="/Photos/Details" asp-route-id="@item.PhotoId">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

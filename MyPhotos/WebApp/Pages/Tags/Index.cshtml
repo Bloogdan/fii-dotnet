@@ -1,0 +1,42 @@
+﻿@page
+@model WebApp.TagsIndexModel
+@{
+    ViewData["Title"] = "Tags";
+}
+
+<h1>Tags</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Tags[0].TagId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tags[0].Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tags[0].Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Tags)
+        {
+            <tr style="font-size:small">
+                <td>
+                    @Html.DisplayFor(modelItem => item.TagId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    <a asp-page="/Tags/Details" asp-route-id="@item.TagId">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
