@@ -25,7 +25,10 @@ namespace WebApp
                 if (p.PhotoId == id.Value)
                 {
                     ViewData["Photo"] = p.PhotoId.ToString() + " : " + p.Path;
-                    foreach(var tag in p.Tags)
+
+                    var tags = await ptc.GetTagsOfPhotoAsync(p);
+
+                    foreach(var tag in tags)
                     {
                         Models.TagDTO tdto = new Models.TagDTO();
                         tdto.TagId = tag.TagId;

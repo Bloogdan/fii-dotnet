@@ -29,7 +29,12 @@ namespace WebApp
                 if(t.TagId == id.Value)
                 {
                     ViewData["Tag"] = t.TagId.ToString() + " : " + t.Type + ", " + t.Name;
-                    foreach (var p in t.Photos)
+
+                    List<ServiceReferencePhotoTag.Tag> l = new List<ServiceReferencePhotoTag.Tag>();
+                    l.Add(t);
+                    var photos = await ptc.GetPhotosWithTagsAsync(l);
+
+                    foreach (var p in photos)
                     {
                         Models.PhotoDTO pdto = new Models.PhotoDTO();
                         pdto.PhotoId = p.PhotoId;
